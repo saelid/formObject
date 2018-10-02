@@ -1,0 +1,1 @@
+$('form').serializeArray().reduce(function(a, x) { a[x.name] ? (Array.isArray(a[x.name]) ? a[x.name].push(x.value) : a[x.name] =  [a[x.name], x.value]) : (a[x.name] = x.value); return a; }, {});
